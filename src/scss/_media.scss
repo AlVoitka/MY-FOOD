@@ -1,0 +1,173 @@
+@media (max-width: 1400px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {   /* от 992 до 1200 */ 
+    .container {
+        max-width: 960px;  
+    }
+    .tabcontainer {
+        width: 950px;
+    }
+    .tabcontent {
+        &__descr {
+            width: 500px;
+            height: 275px;
+            font-size: 18px;
+        }
+    }
+    
+}
+
+
+
+
+@media (max-width: 992px) {  /* от 768 до 992  -- обычно планшетные экраны */
+    .container {
+        max-width: 720px;   
+    }
+    .tabcontainer {
+        width: 725px;
+    }
+    .tabcontent {
+        &__descr {
+            position: static;
+            top: 300px;
+            top: 528px;
+            right: 15px;
+            height: 359px;
+            padding: 15px;
+            width: 370px;
+            height: 200px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    .btn {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) { /* от 576 до 768  -- для планшетных версий */
+    .container {
+        max-width: 540px;  
+    }
+    .tabcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+@media (max-width: 576px) {   /* от 320 до 576  - мобилки */
+    .container {
+        width: 100%;  
+        padding: 0 10px; 
+    }
+    .calculating {
+        display: none;
+    }
+    .promotion {
+        display: none;
+    }
+    .header {
+        display: flex;
+        height: 100px;
+        &__left-block {
+            min-width: 100%;
+            justify-content: center;
+        }
+        &__right-block {
+            display: none;
+        }
+        &__link {
+            display: none;
+        }
+    }
+    .preview {
+        padding: 10px;
+        &__life {
+            display: none;
+        }
+    }
+    .tabcontainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .tabcontent {
+        width: 100%;
+        img {
+            width: 100%;
+            
+        }
+        &__descr {
+            width: 100%;
+            font-size: 17px;
+            line-height: 23px;
+        }
+    }
+    .tabheader {
+        padding: 10px;
+        margin: 0 auto;
+        h3 {
+            font-size: 21px;
+            color: rgb(3, 148, 40);
+        }
+        &__items {
+            margin-top: 15px;
+            font-size: 25px;
+        }
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu {
+        &__field {
+            width:100%;
+            background: none;
+        }
+        &__item {
+            align-items: center;
+            width: 100%;
+        }
+    }
+    .bgc_blue {
+        display: none;
+    }
+    .bgc_y {
+        display: none;
+    }
+    .offer {
+        display: none;
+    }
+    .order {
+        &__form {
+            margin-top: 20px;
+            flex-direction: column;
+            img {
+                display: none;
+            }
+        }
+        &__input {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    }
+    .btn {
+        margin-top: 10px;
+        display: block;
+    }
+}
